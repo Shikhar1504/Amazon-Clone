@@ -323,3 +323,153 @@
     margin-bottom: 10px;
     font-size: 14px;
 }
+.abc{
+    display: none;
+}
+
+@media(max-width:600px)
+{
+    .nav-bar li{
+        display: none;
+    }
+    .nav-bar ul{
+        position: absolute;
+        margin: -195px;
+        margin-left: 0px;
+    }
+    .nav-bar .a{
+        display:block;
+        font-size: 20px;
+    }
+    .nav-bar:hover ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: #232f3e;
+        padding: 10px 5px;
+        width: 200px;
+        box-shadow: 2px 2px 5px hsla(0,0%,0%,0.8);
+        z-index: 1;
+        
+    }
+    .nav-bar:hover li{
+        display:block;
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+    .header--container{
+        display: grid;
+    }
+    .header--logo{
+        display: flex;
+        justify-content: space-between;      
+    }   
+    .header--img--container{
+        padding: 0 60px;
+    }
+    .header--img--container img{
+        width: 100px;
+    }
+    .header--details{
+        height: 10vh;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .header--language{
+        display: none;
+        align-items: start;
+    }
+    .header--signed--in{
+        display: flex;
+        font-size: 16px;
+        gap: 5px;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .header--signed--in span{
+        font-size: 16px;
+    }
+    .header--signed--in b{
+        font-size: 16px;
+    }
+    .header--orders{
+        display: block;
+        display: flex;
+        gap: 5px;
+        width: 95%;
+    }
+    .header--details span{
+        font-size: 16px;
+    }
+    .header--details b{
+        font-size: 16px;
+    }
+    .header--cart{
+        margin: -10px;
+        margin-bottom: 5px;
+    }
+    .header--location--details{
+        display: flex;
+    }
+    .header--location--details span{
+        font-size: 16px;
+    }
+    .header--location--details b{
+        display: none;
+    }
+    .header--location--icon i{
+        font-size: 25px;
+    }
+    .header--search--selection{
+        height: 50px;
+    }
+    .header--search--textbox input{
+        height: 50px;
+    }
+    .header--search--icon{
+        height: 50px;
+    }
+    .image--container img{
+        
+        overflow-x: hidden;
+        height: 80vh;
+    }
+    .product--container{
+        gap:10px;
+        margin-top: -300px;
+    }
+    .product--card{
+        width: 225px;
+    }
+    .product--price{
+        gap:2px;
+    }
+    .product--price b{
+        font-size: 18px;
+    }
+    .footer--content{
+        margin:10px auto;
+        padding: 5px 1px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .footer--content--details{
+        padding: 2px 10px;
+    }
+    .abc{
+        display: block;
+        height: 6vh;
+        width: 100%;
+        background: #232f3e;
+        margin-top: -42px;
+    }
+    .header--cart i{
+        font-size: 28px;
+    }
+    .header--cart span{
+        display: none;
+    }
+}
